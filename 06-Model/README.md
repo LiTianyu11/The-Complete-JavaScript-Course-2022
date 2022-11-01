@@ -31,9 +31,9 @@ for (let i = 0; i < btnsOpenModal.length; i++)
 
 ## KeyboardEvent()
 
-**Element: keydown event:**
+**[Element: keydown event:](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)**
 按下键盘按键时触发
-(https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)
+
 **Element: keyup event:**
 松开键盘时触发
-(https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event)
+[](https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event)
