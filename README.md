@@ -1,2 +1,1 @@
-# 06 - Model
-
+# The-Complete-JavaScript-Course-2022
