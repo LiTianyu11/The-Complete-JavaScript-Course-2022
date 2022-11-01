@@ -1,5 +1,6 @@
 # 06-Model 记录
 
+
 ## [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 
 ```javascript
@@ -13,6 +14,7 @@ const openModal = function () {
 };
 ```
 
+
 ## querySelectorAll 配合 for 循环遍历添加功能
 
 ```javascript
@@ -22,6 +24,7 @@ for (let i = 0; i < btnsOpenModal.length; i++)
   btnsOpenModal[i].addEventListener('click', openModal); //🔴注意这里的OpenModal后面没有加()，否则会立即执行
 ```
 
+
 ## KeyboardEvent()
 
 **[Element: keydown event:](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)**
@@ -29,6 +32,7 @@ for (let i = 0; i < btnsOpenModal.length; i++)
 
 **[Element: keyup event:](https://developer.mozilla.org/en-US/docs/Web/API/Element/keyup_event)**
 松开键盘时触发
+
 
 ## DOMTokenList.contains()
 
