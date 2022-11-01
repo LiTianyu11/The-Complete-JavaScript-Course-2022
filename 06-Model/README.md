@@ -1,6 +1,6 @@
 # 06-Model 记录
-
-## [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+[Element](## Element.classList)
+## Element.classList
 
 ```javascript
 <div class="modal hidden"> </div>;
