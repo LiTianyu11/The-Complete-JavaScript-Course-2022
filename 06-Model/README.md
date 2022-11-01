@@ -1,5 +1,5 @@
 # 06-Model 记录
-[Element](## Element.classList)
+[Element](# Element.classList)
 ## Element.classList
 
 ```javascript
