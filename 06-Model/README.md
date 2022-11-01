@@ -1,20 +1,5 @@
 # 06-Model 记录
 
-## Element.classList
-
-[MDN Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
-
-```html
-<div class="modal hidden"></div>
-```
-
-```javascript
-const openModal = function () {
-  modal.classList.remove('hidden'); //.classList选中html文件中的类
-  overlay.classList.remove('hidden');
-};
-```
-
 ## [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 
 ```javascript
