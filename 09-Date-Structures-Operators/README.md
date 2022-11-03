@@ -99,7 +99,9 @@ console.log(hours);
 ```
 -  Maps => Array (use spread)
 ``` javascript
-[...map]
+[...map] // = [...map.entries()]
+[...map.keys()] //生成keys数组
+[...map.values()] //生成values数组
 ```
 
 ## ⭐ 利用Map写一个问答小程序
