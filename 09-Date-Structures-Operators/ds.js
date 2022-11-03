@@ -1,16 +1,21 @@
-const s = new Set(["a", "b", "c"]);
-const s1 = [...new Set(["a", "b", "c"])];
-console.log(typeof s);
-console.log(typeof s1);
+const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
-const rest = new Map();
-rest.set("name", "Tianyu");
-rest.set("name", "ChangeName");
-console.log(rest);
+const openingHours = {
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
 
-rest
-    .set("catogories", ["1", "2", "3"])
-    .set('open',11)
-    .set('close',23)
-    .set(true, 'We are open')
-    .set(false, 'We are close')
+console.log(openingHours);
+console.log(Object.entries(openingHours));
+const hours = new Map(Object.entries(openingHours));
+console.log(hours);
