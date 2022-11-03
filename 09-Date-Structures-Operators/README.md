@@ -27,16 +27,12 @@ console.log(s1); // ['a', 'b', 'c']
 - Maps 比 Sets 有用很多
 - 在 Objects 中 Keys 基本上都是 Strings，但 Maps 中 Keys 可以是任何类型（可以是 Objects，Arrays，或其他 Maps）
 
-
-
 ## Maps 常用方法
-- 创建Maps
+
+- 创建 Maps
+
 ```javascript
-const map = new Map(
-    ['key1', 'value1'],
-    ['key2', 'value2'],
-    ['key3', 'value3']
-)
+const map = new Map(["key1", "value1"], ["key2", "value2"], ["key3", "value3"]);
 ```
 
 - Map.prototype.set()
@@ -74,3 +70,30 @@ rest.set(arr , "Test");
 rest.get(arr) // "Test"
 
 ```
+
+## Objects => Maps
+
+```javascript
+const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+const openingHours = {
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
+
+console.log(openingHours);
+console.log(Object.entries(openingHours));
+const hours = new Map(Object.entries(openingHours));
+console.log(hours);
+```
+[Objects=>Maps](./Pics/image%205.png)

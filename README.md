@@ -8,4 +8,3 @@
 - Sets
 - Maps
 
-image.png
