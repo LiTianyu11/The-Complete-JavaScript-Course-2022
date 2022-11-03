@@ -71,7 +71,7 @@ rest.get(arr) // "Test"
 
 ```
 
-## Objects => Maps /  Maps => Array
+## ⭐ Objects => Maps /  Maps => Array
 
 - Objects -> Array -> Maps
 ```javascript
@@ -102,7 +102,7 @@ console.log(hours);
 [...map]
 ```
 
-## 利用Map写一个问答小程序
+## ⭐ 利用Map写一个问答小程序
 ``` javascript
 const question = new Map([
   ['question', 'What is the best programming language in the world?'],
