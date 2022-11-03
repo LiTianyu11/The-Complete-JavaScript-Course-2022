@@ -139,4 +139,4 @@ console.log(question.get(question.get("correct") === answer));
 
 
 ## 基本内置数据类型（Arrays Objects Sets Maps)该用哪个？
-![Alt text](../../../../../../../C:/Users/%E6%9D%8E%E5%A4%A9%E5%AE%87/Documents/GitHub/The-Complete-JavaScript-Course-2022/09-Date-Structures-Operators/Pics/image%206.jpg)
+![Alt text](09-Date-Structures-Operators\Pics\image 6.jpg)
