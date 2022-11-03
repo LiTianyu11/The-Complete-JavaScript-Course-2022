@@ -71,8 +71,9 @@ rest.get(arr) // "Test"
 
 ```
 
-## Objects => Maps
+## Objects => Maps /  Maps => Array
 
+- Objects -> Array -> Maps
 ```javascript
 const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
@@ -91,9 +92,34 @@ const openingHours = {
   },
 };
 
-console.log(openingHours);
-console.log(Object.entries(openingHours));
-const hours = new Map(Object.entries(openingHours));
+console.log(openingHours); //Object
+console.log(Object.entries(openingHours)); // Object => Arrays
+const hours = new Map(Object.entries(openingHours)); // Array => Map
 console.log(hours);
 ```
-[Objects=>Maps](./image%205.png)
+-  Maps => Array (use spread)
+``` javascript
+[...map]
+```
+
+## 利用Map写一个问答小程序
+``` javascript
+const question = new Map([
+  ['question', 'What is the best programming language in the world?'],
+  [1, 'C'],
+  [2, 'Java'],
+  [3, 'JavaScript'],
+  ['correct', 3],
+  [true, 'Correct 🎉'],
+  [false, 'Try again!'],
+]);
+
+// Quiz app
+console.log(question.get('question'));
+for (const [key, value] of question) {
+  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+}
+
+const answer = Number(prompt('Your answer'));
+console.log(question.get(question.get('correct') === answer));
+```
