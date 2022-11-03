@@ -4,6 +4,6 @@
 
 [06-Model](06-Model\README.md)
 
-[09-Date-Structures-Operators](09-Date-Structures-Operators\README.md)
+[09-Date-Structures-Operators](09-Date-Structures-Operators)
 - Sets
 - Maps
