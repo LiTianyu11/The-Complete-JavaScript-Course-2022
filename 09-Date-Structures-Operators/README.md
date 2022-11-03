@@ -71,9 +71,10 @@ rest.get(arr) // "Test"
 
 ```
 
-## ⭐ Objects => Maps /  Maps => Array
+## ⭐ Objects => Maps / Maps => Array
 
 - Objects -> Array -> Maps
+
 ```javascript
 const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
@@ -97,31 +98,45 @@ console.log(Object.entries(openingHours)); // Object => Arrays
 const hours = new Map(Object.entries(openingHours)); // Array => Map
 console.log(hours);
 ```
--  Maps => Array (use spread)
-``` javascript
+
+- Maps => Array (use spread)
+
+```javascript
 [...map] // = [...map.entries()]
 [...map.keys()] //生成keys数组
 [...map.values()] //生成values数组
 ```
 
-## ⭐ 利用Map写一个问答小程序
-``` javascript
+## ⭐ 利用 Map 写一个问答小程序
+
+```javascript
 const question = new Map([
-  ['question', 'What is the best programming language in the world?'],
-  [1, 'C'],
-  [2, 'Java'],
-  [3, 'JavaScript'],
-  ['correct', 3],
-  [true, 'Correct 🎉'],
-  [false, 'Try again!'],
+  ["question", "What is the best programming language in the world?"],
+  [1, "C"],
+  [2, "Java"],
+  [3, "JavaScript"],
+  ["correct", 3],
+  [true, "Correct 🎉"],
+  [false, "Try again!"],
 ]);
 
 // Quiz app
-console.log(question.get('question'));
+console.log(question.get("question"));
 for (const [key, value] of question) {
-  if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+  if (typeof key === "number") console.log(`Answer ${key}: ${value}`);
 }
 
-const answer = Number(prompt('Your answer'));
-console.log(question.get(question.get('correct') === answer));
+const answer = Number(prompt("Your answer"));
+console.log(question.get(question.get("correct") === answer));
 ```
+
+## Souces of Data
+
+- From the program itself: Date wirrten directly in source code (e.g status message)
+- From the UI: Date input from the user or data written in DOM (e.g tasks in todo apps )
+- From external sources: Data fetched for example form web APIs (e.g recipe objects)
+  通过web APIs得到的数据通常采用JSON格式
+
+
+## 基本内置数据类型（Arrays Objects Sets Maps)该用哪个？
+![Alt text](../../../../../../../C:/Users/%E6%9D%8E%E5%A4%A9%E5%AE%87/Documents/GitHub/The-Complete-JavaScript-Course-2022/09-Date-Structures-Operators/Pics/image%206.jpg)
