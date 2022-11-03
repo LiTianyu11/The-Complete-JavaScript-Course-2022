@@ -96,4 +96,4 @@ console.log(Object.entries(openingHours));
 const hours = new Map(Object.entries(openingHours));
 console.log(hours);
 ```
-[Objects=>Maps](./Pics/image%205.png)
+[Objects=>Maps](09-Date-Structures-Operators\image 5.png)
